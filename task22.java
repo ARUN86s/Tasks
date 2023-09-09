@@ -26,7 +26,8 @@ public class task22 {
 	    String result=String.valueOf(answer);  
 		driver.findElement(By.xpath("//input[@class='form-control w-100']")).sendKeys(result);
 		driver.findElement(By.xpath("//button[@class='btn btn-primary btn-lg w-100']")).click();
-		
+		Thread.sleep(10000);
+		driver.close();
 		
 	}
 
